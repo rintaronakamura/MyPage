@@ -1,0 +1,70 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #515151;
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.site-header {
+  margin-bottom: 40px;
+}
+
+.site-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sns-icon {
+  margin: 5px;
+  font-size: 20px;
+}
+
+.site-content {
+  padding: 30px 0px;
+}
+
+.articles {
+  list-style: none;
+}
+
+.article-link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.0;
+}
+
+.article-date {
+  color: #717171;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.article-header {
+  margin-bottom: 50px;
+}
+
+.article-header h1 {
+  color: #515151;
+  font-size: 40px;
+  word-break: break-all;
+  line-height: 1.0;
+}
+
+.article-content {
+  word-wrap: break-word;
+}
+
+
+
