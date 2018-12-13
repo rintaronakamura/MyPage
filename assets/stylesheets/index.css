@@ -66,5 +66,19 @@ a {
   word-wrap: break-word;
 }
 
+.article-content h2 {
+  margin-top: 40px;
+  color: #515151;
+  word-break: break-all;
+  line-height: 1.0;
+}
+
+.article-content p {
+  margin-top: 20px;
+  color: #515151;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 
 
