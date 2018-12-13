@@ -80,5 +80,8 @@ a {
   line-height: 1.5;
 }
 
+.article-content a {
+  color: #0000FF;
+}
 
 

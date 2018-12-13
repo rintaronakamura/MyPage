@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">CSSのキャッシュによりデザインが更新されないのを防ぐ</h1>
+            <p class="article-date">post: 2018/12/13, update: 2018/12/13</p>
+          </header>
+          <article class="article-content">
+            <p>この記事は当ブログのCSSファイルを修正しサーバーにアップした後、サイトを更新してもデザインが適応されないという経験をしたときの対応をメモしたもの。</p>
+            <h2>方法1. スーパーリロード</h2>
+            <p>
+            スーパーリロードについては<a href="http://os0x.hatenablog.com/entry/20110617/1308280740" target="_blank">こちら</a>を読んだ。自分はMacでChrome(バージョン: 70.0.3538.110)を使っているので「command + shift + r」でスーパーリロードした。
+            </p>
+            <h2>方法2. CSSファイルの指定の後ろにクエリを加える</h2>
+            <p>
+            下記のコードのようにCSSファイルの指定の後ろにクエリ(20181213000000)を加えることでスーパーリロードをかけなくても自動で更新されるようになる。
+            <pre><code class="html">
+            &lt;link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css?20181213000000"&gt;
+            </code></pre>
+            ただ、対象のCSSファイルが多いと変更箇所が増えて面倒くさくなりそう。とりあえずはこれで対応して、必要になったら別のやり方見つけて対応しよう。その際はここに追記してく。
+            </p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
