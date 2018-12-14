@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">Vimにインストール済みのプラグインのdoc一覧を表示する</h1>
+            <p class="article-date">post: 2018/12/15, update: 2018/12/15</p>
+          </header>
+          <article class="article-content">
+            <p>Vimで:help<CR>してヘルプを開いたら、一番下の方まで移動すると現時点でVimにインストールされているプラグインのdoc一覧が確認できる。</p>
+            <p>help.txt</p>
+            <pre><code>
+              LOCAL ADDITIONS:				*local-additions*
+              |dein.txt|	Dark powered Vim/Neovim plugin manager
+              |airline-themes.txt|  Themes for vim-airline
+              |AutoClose.txt| Documentation for script AutoClose.vim
+              |caw.txt| Comment plugin: Operator/Dot-repeatable/300+ filetypes
+              |context_filetype.txt|	Context filetype library for Vim script
+              |dein.txt|	Dark powered Vim/Neovim plugin manager
+              |emmet.txt|        *Emmet* for Vim
+              |indentLine.txt|        Show vertical lines for indent with conceal feature
+              |neocomplete.txt|	Next generation of auto completion framework.
+              |neosnippet.txt|
+              |NERDTree.txt|   A tree explorer plugin that owns your momma!
+              |previm.txt|	Preview Plugin
+              |syntastic-checkers.txt|	Syntastic checkers
+              |winresizer.txt|  Easily resize, focus, and move your windows
+            </code></pre>
+            <p>プラグイン一覧を表示するコマンドがあったらいいなとか思って探してみたんだけど無いのかな。作ってみよっかな。インストール済みのプラグインを一覧表示してdocのリンククリックするとdocが表示されるみたいなのあったら嬉しい。</p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
