@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">特殊キーをCtrlとの組み合わせで表現する</h1>
+            <p class="article-date">post: 2018/12/19, update: 2018/12/19</p>
+          </header>
+          <article class="article-content">
+            <p>最近<a href="http://files.kaoriya.net/docs/SpartanVim/SpartanVim-1.0-online.pdf" target="_blank">スパルタンVim</a>を読んでいるんですが、その中でESCなどの特殊キーはCtrlキーとの組み合わせで表現できるという情報がありました。</p>
+            <pre><code>
+              ESC: Ctrl+[
+              TAB: Ctrl+I
+              Enter: Ctrl+M
+              BACKSPACE: Ctrl+H
+            </code></pre>
+            <p>本書では上のようなCtrlキーを使った代用が紹介されていて(もしかしたらもっとあったかも)、特にESCキーをCtrl+[で代用することをおすすめしていました。というのも、ESCキーはキーボードの種類によってその場所が大きく異なるからだそうです。個人的にはESCキーよりもCtrl+[の方がホームポジションが崩れないしタイピングもしやすいので代用していこうと思っています。そのほかBACKSPACEキーの代用も結構便利そうです。</p>
+            <p>ちなみに、なぜCtrl+[がESCの代用になるのかは<a href="http://tyru.hatenablog.com/entry/2018/10/04/151740" target="_blank">端末アプリで Ctrl-[ が Esc になる理由</a>を参考にどうぞ。それと自分が読んでいるスパルタンVimは少し前のものらしいです。。。おそらく<a href="https://www.kaoriya.net/blog/2016/09/15/" target="_blank">これ</a>かなと思うのですが念のため調べてみてください(丸投げ)。</p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
