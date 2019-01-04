@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">Vimの置換コマンド</h1>
+            <p class="article-date">post: 2019/1/4, update: 2019/1/4</p>
+          </header>
+          <article class="article-content">
+            <p>置換コマンドを忘れてググることが多いので個人的によく使うやつのめっも。</p>
+            <p>まずはファイル全体で置換するやつ。</p>
+            <pre><code>
+               :%s/置換前/置換後/g
+            </code></pre>
+            <p>次に範囲を指定して置換するやつ。</p>
+            <pre><code>
+               :1,100s/置換前/置換後/g
+               :'<,'>s/置換前/置換後/g
+            </code></pre>
+            <p>上が1 ~ 100行内で一致する箇所を置換して、下はビジュアルモードで選択している箇所で置換してくれるやつ。</p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
