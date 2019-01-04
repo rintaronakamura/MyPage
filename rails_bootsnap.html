@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">Bootsnapについて</h1>
+            <p class="article-date">post: 2019/1/19, update: 2019/1/19</p>
+          </header>
+          <article class="article-content">
+            <p>久しぶりにrailsでアプリを作成したところ次のようなエラーが出た。調べたところBootsnapというgemが未インストールだった模様。<a href="http://y-yagi.tumblr.com/post/161406680990/bootsnap%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" target="_blank">Bootsnapについて</a></p>
+            <pre><code>
+              lime:sample_app residenti$ brails -v
+              /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/config/boot.rb:4:in `require': cannot load such file -- bootsnap/setup (LoadError)
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/config/boot.rb:4:in `<top (required)>'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/bin/rails:8:in `require_relative'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/bin/rails:8:in `<top (required)>'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/vendor/bundle/ruby/2.4.0/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/bin/spring:15:in `require'
+                from /Users/residenti/Documents/Program/environment/Ruby_on_Rails/sample_app/bin/spring:15:in `<top (required)>'
+                from bin/rails:3:in `load'
+                from bin/rails:3:in `<main>'
+            </code></pre>
+            <p></p>
+            <p></p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
