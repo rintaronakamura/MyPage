@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">ffmpegコマンドで動画圧縮</h1>
+            <p class="article-date">post: 2019/1/5, update: 2019/1/5</p>
+          </header>
+          <article class="article-content">
+            <p>動画と音声を記録/変換/再生できるフリーソフトフェア、<a href="https://ffmpeg.org/" target="_blank">FFmpeg</a>(エフエフエムペグ)を使って動画を圧縮してみました。インストールはmacOSなので<a href="https://qiita.com/Ryosuke-Hujisawa/items/6a1c47d31ac299dc1c46" target="_blank">こちら</a>を参考にさせていただきました。</p>
+            <pre><code>
+              $ ffmpeg -i exapmle_original.mp4 -crf 10 exapmle_compressed.mp4
+            </code></pre>
+            <p>上記は圧縮元ファイルのexapmle_original.mp4を圧縮率10でexapmle_compressed.mp4として出力しています。また、下記参考サイトより圧縮率は値が大きいほど高圧縮になり、スマホで撮った動画の場合は32くらいで圧縮するとちょうどよい容量になるとのこと。(詳しく調べたら追記しますー)</p>
+            <p><a href="http://mankindinc.jp/wp01/2018/03/14/ffmpeg%E3%81%AE%E5%8B%95%E7%94%BB%E5%9C%A7%E7%B8%AE%E3%83%BB%E5%A4%89%E6%8F%9B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" target="_blank">FFmpegの動画圧縮・変換コマンドの使い方 – Mankind Inc.</a>にはここで紹介した動画圧縮の他に「サイズ変更/動画向き変更/サウンド無効化/PinP映像化」なども紹介されています。</p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
