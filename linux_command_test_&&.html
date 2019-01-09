@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>residenti blog</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">　
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">residenti ぶろぐ</a>
+        <a class="sns-icon" href="https://twitter.com/v_residenti" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="sns-icon" href="https://github.com/residenti" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="site-content">
+      <div class="wrap">
+        <div class="article">
+          <header class="article-header">
+            <h1 class="article-title">test -r ~/.bashrc && . ~/.bashrc を読み解く</h1>
+            <p class="article-date">post: 2019/1/9, update: 2019/1/9</p>
+          </header>
+          <article class="article-content">
+            <p>最近PCの初期化にともないセットアップをしていました。その中で.bash_profileを編集している時に表題の行を見つけて「？(おそらく.bashrcを読み込んでいるのだろうけどtestってなんだ???)」となったので、この行で使われているLinxuコマンドについて調べ動作を理解してみました。これはその書き留め。<a href="" target="_blank"></a></p>
+            <p>.bash_profile</p>
+            <pre><code>
+              test -r ~/.bashrc && . ~/.bashrc
+            </code></pre>
+            <p>この行で使われているLinuxコマンドは3つ。</p>
+            <p>1: <a href="https://shellscript.sunone.me/if_and_test.html#test-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89" target="_blank">test</a>は評価結果に従い、真(0)か偽(1)を返すコマンドで、オプションの-rは渡したfile(ここでは~/.bashrc)が読み取り可能ならば真となる。</p>
+            <p>2: <a href="https://tech.nikkeibp.co.jp/it/article/COLUMN/20060224/230604/" target="_blank">&&</a>は1つ目のコマンドが正常終了した場合に2つ目のコマンドを実行するコマンド。</p>
+            <p>3: <a href="https://eng-entrance.com/linux-command-source" target="_blank">. (= source)</a>は渡したfile(ここでは~/.bashrc)に記載されテイルコマンドを実行するコマンド。</p>
+            <p>よって、この行の動作は「~/.bashrcが読み取り可能ならば、~/.bashrc内に記載されているコマンドを実行する」となる。とりあえずなるほど。</p>
+          </article>
+          <footer class="article-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
